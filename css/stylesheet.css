@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navbar-height: 59px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo img {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin: 3px 6px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* position: sticky; */
+  top: 0px;
+}
+
+.logo {
+  margin: 10px 34px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.navbar::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 75%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.99;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home-section */
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home::before {
+  content: '';
+  background-color: white;
+  background: url('../img/cake1.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 680px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.home p {
+  text-align: center;
+  font-weight: bold;
+  font-family: lato, Courier, monospace;
+}
+
+/* services-section */
+
+.services {
+  margin: 34px;
+  display: flex;
+}
+
+.services .box {
+  border: 3px solid violet;
+  padding: 34px;
+  margin: 1px 5px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+.services .box p {
+  font-family: lato, Courier, monospace;
+}
+
+.client-section {
+  position: relative;
+}
+
+.client-section::before {
+  content: "";
+  position: absolute;
+  background: url('../img/clientbg.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+
+}
+
+.client-item {
+  padding: 34px;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.clients img {
+  height: 124px;
+}
+
+/* contact-us section */
+
+.contact {
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../img/contactbg4.jpg') no-repeat center center/cover;
+  /* 4,5  6*/
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border: 3px solid violet;
+}
+
+.contact-box form {
+  width: 40%;
+}
+
+.contact-box label {
+  font-size: 1.3rem;
+  font-family: lato, Courier, monospace;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* utilityclasses */
+
+.h-primary {
+  font-family: lato, Courier, monospace;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-scondary {
+  /* font-family: lato, Courier, monospace; */
+  /* Georgia (serif)   Verdana (sans-serif)*/
+  font-family: Georgia (serif);
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid black;
+  margin: 30px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
